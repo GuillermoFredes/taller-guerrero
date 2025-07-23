@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  SIZE: 100px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1597764699510-940e27b9f2e6') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.servicios {
+  background-color: #fff;
+}
+
+.servicio {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.turnos {
+  background-color: #fefefe;
+}
+
+.form-turno, .form-resena {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.form-turno label, .form-resena label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-turno input,
+.form-turno textarea,
+.form-resena input,
+.form-resena textarea,
+.form-resena select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-turno button, .form-resena button {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contacto {
+  background-color: #eee;
+}
+
+.lista-resenas {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  text-align: left;
+}
+
+.resena-item {
+  margin-bottom: 15px;
+}
+
+.estrellas {
+  color: #ffc107;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+footer a {
+  color: #ffc107;
+  margin: 0 10px;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.whatsapp-float i {
+  line-height: 60px;
+}
+
+.titulo {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+.carousel {
+
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+
+
+}
+
+
+
+
+
+/* Media Queries para móviles */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .form-turno, .form-resena {
+    max-width: 90%;
+  }
+
+  .lista-resenas {
+    max-width: 90%;
+  }
+}
