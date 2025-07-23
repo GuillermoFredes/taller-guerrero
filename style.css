@@ -5,15 +5,14 @@
   box-sizing: border-box;
 }
 
-/* Layout general */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  overflow-x: hidden; /* ← evita desplazamiento lateral */
+  overflow-x: hidden;
 }
 
-/* Header */
+/* Header y nav */
 header {
   background-color: #333;
   color: #fff;
@@ -21,25 +20,43 @@ header {
   text-align: center;
 }
 
-/* Navegación */
+nav {
+  background-color: #444;
+  text-align: center;
+  padding: 10px 0;
+}
+
 nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
+  display: inline-block;
 }
 
-/* Contenedores */
+/* Contenedor principal */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
-/* Imagenes responsivas */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Galería de imágenes */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Mapa responsivo */
@@ -60,7 +77,41 @@ img {
   height: 100%;
 }
 
-/* Botón WhatsApp flotante */
+/* Formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Botón flotante WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -92,13 +143,12 @@ footer {
   margin-top: 40px;
 }
 
-/* Ícono de Instagram */
 .ig-icon i {
   color: #E4405F;
   font-size: 24px;
 }
 
-/* Media queries para pantallas chicas */
+/* Responsividad */
 @media (max-width: 600px) {
   header, nav, .container, footer {
     padding: 10px;
@@ -119,10 +169,11 @@ footer {
   }
 
   .map-container {
-    padding-bottom: 75%; /* más alto para pantallas chicas */
+    padding-bottom: 75%;
   }
 
   .ig-icon i {
     font-size: 20px;
   }
 }
+
